@@ -3,6 +3,7 @@ class A(object):
     def __init__(self):
         self.A1 = 5
         self.A2 = 'd'
+        B(self.A1)
 
     def A_func1(self):
         self.A1 = self.A1 + 6
@@ -13,17 +14,26 @@ class A(object):
 
 class B(object):
 
-    def __init__(self):
-        self.B1 = 'hi'
+    def __init__(self,a):
+        self.lpd = a
         self.B2 = 4
-        self.Bob = A()
-        print type(self.Bob)
-
+        self.B1 = 'hello'
+    @property
     def B_func1(self):
-        print 'b1'
-        return self.Bob
+        return 5
+    @property
+    def fw(selfs):
+        return 5
 
 
+
+    def __set__(self, instance, value):
+         = value
+
+    def __len__(self):
+
+    def __ite
+    @property
     def B_func2(self):
         print 'a1'
 
@@ -34,8 +44,13 @@ class C(object):
         self.C2 = self.C1.B_func1()
         self.C2.A_func1()
 
+    def __
 if __name__=='__main__':
-    temp = C()
+    temp = B(4)
+    print temp.fw
+    temp.B1 = 3
+    temp.setFw()
+
 
 
 
