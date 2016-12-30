@@ -50,6 +50,7 @@ if __name__=='__main__':
     print temp.fw
     temp.B1 = 3
     temp.setFw()
+	print 
 
 
 
