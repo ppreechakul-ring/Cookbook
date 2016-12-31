@@ -46,6 +46,8 @@ class C(object):
 
     def add():
 		pass
+		a + b
+		
 if __name__=='__main__':
     temp = B(4)
     print temp.fw
